@@ -516,6 +516,10 @@ section {
 
     .menuworld {
         flex-wrap: wrap;
+        .menuworld > div {
+            height: 200px;
+            width: 200px;
+        }
     }
 
     .menuworld > div {
@@ -527,7 +531,8 @@ section {
 
 @media (max-width: 550px) {
     .menuworld > div {
-        height: 200px;
+        height: 150px;
+        width: 150px;
     }
     
     .pericias {
@@ -564,8 +569,8 @@ section {
     }
 
     .menuworld > div {
-        height: 200px;
-        width: 40vw;
+        height: 120px;
+        width: 120px;
         margin: 5px;
     }
 
@@ -595,6 +600,11 @@ section {
         min-width: 50px;
         max-height: 30px;
         font-size: 14px;
+    }
+
+    .menuworld > div {
+        height: 80px;
+        width: 80px;
     }
 
     .content h1 {
