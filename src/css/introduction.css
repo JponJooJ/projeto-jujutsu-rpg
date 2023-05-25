@@ -1,0 +1,620 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "HarukazeOTF";
+    src: url(../fontes/Harukaze.otf);
+}
+
+@font-face {
+    font-family: "HarukazeTTF";
+    src: url(../fontes/Harukaze.ttf);
+}
+
+@font-face {
+    font-family: "YozakuraOTF";
+    src: url(../fontes/YOZAKURA-Regular.otf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    min-height: max-content;
+}
+
+main {
+    max-width: 1366px;
+    margin: 30px auto 60px auto;
+    background-color: #161616;
+    border: 8px solid silver;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.075);
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.main-image {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.links {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.links a > span {
+    position: absolute;
+    top: 90px;
+    text-align: center;
+}
+
+.icon {
+    width: 3.5vh;
+    height: 3.5vh;
+    margin-top: 50px;
+}
+
+.container {
+    background-color: transparent;
+    min-height: 100vh;
+    max-width: 1336px;
+    margin: 100px auto 30px auto;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    background-color: transparent;
+    min-height: 100px;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons > div {
+    background-color: #571213;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    font-family: "HarukazeOTF", "HarukazeTTF", "YozakuraOTF", sans-serif;
+    font-size: 40px;
+    color: rgb(228, 228, 38);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.buttons > div:hover {
+    scale: 1.1;
+    transition: 0.5s;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content h1 {
+    text-align: center;
+    color: rgb(228, 228, 38);
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin: 20px;
+    font-family: "HarukazeOTF", "HarukazeTTF", "YozakuraOTF", sans-serif;
+}
+
+.content h2 {
+    text-align: center;
+    color: rgb(228, 228, 38);
+    font-size: 80px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    margin: 20px;
+    font-family: "YozakuraOTF", sans-serif;
+}
+
+.content h3 {
+    text-align: center;
+    color: rgb(228, 228, 38);
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "YozakuraOTF", sans-serif;
+}
+
+.content p,
+.content li {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 20px;
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content li {
+    margin-left: 40px;
+    text-indent: 0px;
+}
+
+.rpg {
+    margin: 20px auto;
+
+}
+.world {
+    display: none;
+    margin: 20px auto;
+}
+
+.menuworld {
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuworld > div {
+    height: 800px;
+    width: 40vw;
+    margin: 5px;
+}
+
+.feiticeiros {
+    background-image: url("../images/feiticeiros.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+}
+
+.maldicoes {
+    background-image: url("../images/maldicoes.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+}
+
+.energia {
+    background-image: url("../images/energia.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+}
+
+.tecnicas {
+    background-image: url("../images/tecnicas.png");
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+}
+
+.feiticeiroscontent {
+    display: none;
+    min-width: 937px;
+    min-height: 800px;
+    text-align: justify;
+    overflow-y: scroll;
+}
+
+.maldicoescontent {
+    display: none;
+    min-width: 937px;
+    min-height: 800px;
+    overflow-y: scroll;
+}
+
+.energiacontent {
+    display: none;
+    min-width: 937px;
+    min-height: 800px;
+    overflow-y: scroll;
+}
+
+.tecnicascontent {
+    display: none;
+    min-width: 937px;
+    min-height: 800px;
+    overflow-y: scroll;
+}
+
+.system {
+    display: none;
+    margin: 20px auto;
+}
+
+.pericias {
+    display: grid;
+    grid-template-areas: 
+    "pericia pericia pericia pericia periciaconteudo"
+    "pericia pericia pericia pericia periciaconteudo"
+    "pericia pericia pericia pericia periciaconteudo"
+    "pericia pericia pericia pericia periciaconteudo"
+    "pericia pericia pericia pericia periciaconteudo"
+    "pericia pericia pericia pericia periciaconteudo";
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+
+.pericia {
+    background-color: rgba(255, 255, 255, 0.2);
+    color:  rgb(228, 228, 38);
+    border-radius: 15px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+    width: 150px;
+    padding: 10px;
+    font-family: "YozakuraOTF", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: "pericia";
+    gap: 10px;
+    margin: auto;
+}
+
+.pericia img {
+    width: 50px;
+    height: 50px;
+}
+
+.acrobacia {
+    background-color: rgb(87, 18, 19);
+}
+
+.periciaconteudo {
+    background-color: #571213;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.466);
+    width: 400px;
+    height: 800px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: "periciaconteudo";
+    grid-column: periciaconteudo;
+    grid-row: periciaconteudo;
+}
+
+.c {
+    display: none;
+    text-align: center;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.c > img {
+    width: 100px;
+    height: 100px;
+}
+
+.c > h4 {
+    text-align: center;
+    color: rgb(228, 228, 38);
+    font-size: 60px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    font-family: "YozakuraOTF", sans-serif;
+}
+
+.c p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.for {
+    color: red;
+    text-decoration: underline;
+}
+
+.des {
+    color: green;
+    text-decoration: underline;
+}
+
+.con {
+    color: orange;
+    text-decoration: underline;
+}
+
+.int {
+    color: rgba(77, 77, 240, 0.562);
+    text-decoration: underline;
+}
+
+.sab {
+    color: rgb(0, 191, 255);
+    text-decoration: underline;
+}
+
+.car {
+    color: rgb(248, 62, 93);
+    text-decoration: underline;
+}
+
+.atri {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+section {
+    color: black;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.acrobaciac {
+    display: block;
+}
+
+@media (max-width: 1366px) {
+    main {
+        margin: 0px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .container {
+        margin: 80px auto 0px auto;
+    }
+
+    .main-image {
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    .pericia {
+        width: 100px;
+        font-size: 25px;
+    }
+
+    .periciaconteudo {
+        width: 300px;
+        height: 800px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .feiticeiroscontent {
+        min-width: 60vw;
+    }
+    
+    .maldicoescontent {
+        min-width: 60vw;
+    }
+    
+    .energiacontent {
+        min-width: 60vw;
+    }
+    
+    .tecnicascontent {
+        min-width: 60vw;
+    }
+}
+
+@media (max-width: 940px) {
+    .menuworld > div {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .pericia {
+        width: 80px;
+    }
+
+    .pericia > span {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .pericias {
+        display: grid;
+        grid-template-areas: 
+        "pericia pericia pericia pericia"
+        "pericia pericia pericia pericia"
+        "pericia pericia pericia pericia"
+        "pericia pericia pericia pericia"
+        "pericia pericia pericia pericia"
+        "pericia pericia pericia pericia"
+        "periciaconteudo periciaconteudo periciaconteudo periciaconteudo";
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+
+    .pericia > img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .periciaconteudo {
+        height: 400px;
+        width: auto;
+        grid-area: "periciaconteudo";
+        grid-column: periciaconteudo;
+        grid-row: periciaconteudo;
+    }
+}
+
+@media (max-width: 780px) {
+    .container {
+        margin: 80px auto 0px auto;
+    }
+
+    .buttons > div{
+        min-width: 150px;
+        max-height: 50px;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .links a {
+        font-size: 14px;
+    }
+    
+    .container {
+        margin: 80px auto 0px auto;
+    }
+
+    .buttons > div {
+        min-width: 100px;
+        max-height: 50px;
+        font-size: 25px;
+    }
+
+    .menuworld {
+        flex-wrap: wrap;
+    }
+
+    .menuworld > div {
+        height: 400px;
+        width: 40vw;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 550px) {
+    .menuworld > div {
+        height: 200px;
+    }
+    
+    .pericias {
+        display: grid;
+        grid-template-areas: 
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "pericia pericia pericia"
+        "periciaconteudo periciaconteudo periciaconteudo";
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+
+}
+
+@media (max-width: 460px) {
+    .links a {
+        font-size: 12px;
+    }
+    
+    .container {
+        margin: 50px auto 0px auto;
+    }
+
+    .buttons > div {
+        min-width: 80px;
+        max-height: 50px;
+        font-size: 20px;
+    }
+
+    .menuworld > div {
+        height: 200px;
+        width: 40vw;
+        margin: 5px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+    
+    .content h2 {
+        font-size: 60px;
+    }
+    
+    .content h3 {
+        font-size: 40px;
+    }
+
+    .content p, .content li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 370px) {
+    .buttons {
+        min-height: 70px;
+    }
+    
+    .buttons > div {
+        min-width: 50px;
+        max-height: 30px;
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 25px;
+    }
+    
+    .content h2 {
+        font-size: 35px;
+    }
+    
+    .content h3 {
+        font-size: 30px;
+    }
+
+    .pericia {
+        width: 50px;
+    }
+
+    .pericia > img {
+        height: 20px;
+        width: 20px;
+    }
+}

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feiticeiros e Maldições - Livro Básico</title>
+    <link rel="stylesheet" href="../css/introduction.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/modoclaro.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="../images/main-image.png" alt="" class="main-image">
+                <ul class="links">
+                    <a href="https://drive.google.com/file/d/1CuIsIm8XvY6rnlW6RofqGSz1-UHdgyUI/view?usp=sharing" target="_blank" rel="external"><img src="../images/pdf-icon.png" alt="" class="icon systemRPG"><span>Livro Básico</span></a>
+                    <a href="https://docs.google.com/spreadsheets/d/1FwGq5BgTskWBDjUIEhkiKh-FNJHGhEFVyJZIc7niOkg/edit?usp=sharing" target="_blank" rel="external"><img src="../images/gs-icon.png" alt="" class="icon fichaGS"><span>Ficha Online</span></a>
+                    <a href="src/ficha-pdf/Ficha_Feiticeiros_e_Maldicoes_0.8.pdf" download="Ficha_Feiticeiros_e_Maldicoes_0.8.pdf" target="_blank"><img src="../images/pdf-icon.png" alt="" class="icon fichaPDF"><span>Ficha PDF</span></a>
+                    <a href="https://www.youtube.com/@Setsugiri" target="_blank" rel="external"><img src="../images/yt-icon.png" alt="" class="icon yt"><span>Canal Oficial</span></a>
+                    <a href="https://discord.gg/UGg6QUNNRp" target="_blank" rel="external"><img src="../images/discord-icon.png" alt="" class="icon discord"><span>Servidor Oficial</span></a>
+                </ul>
+        </header>
+        <div class="container">
+            <div class="buttons">
+                <div class="rpgbutton">O que é RPG?</div>
+                <div class="worldbutton">Mundo Jujutsu</div>
+                <div class="systembutton">Sistema do RPG</div>
+            </div>
+            <div class="content">
+                <div class="rpg">
+                    <h1>Um jogo de Interpretação</h1>
+                    <p>
+                        O RPG, uma abreviação de Roleplaying Game (jogo de interpretação), teve sua origem nos Estados Unidos durante os anos 1970. Nesse tipo de jogo, os participantes se reúnem para criar uma história coletivamente. Um dos participantes assume o papel de mestre, responsável pela narrativa, estabelecendo o cenário e as situações. O mestre descreve a cena e o que está ocorrendo, enquanto os jogadores descrevem as ações e comportamentos de seus personagens. Em seguida, o mestre narra como as pessoas e o mundo reagem às escolhas e ações dos jogadores.
+                    </p>
+                    <p>
+                        O conceito do RPG compartilha elementos de jogos infantis de faz de conta. Dessa forma, é comum pensar que todas as decisões e desdobramentos são totalmente controlados pelo mestre. Embora isso seja frequentemente verdadeiro, no jogo de RPG não há um vencedor ou perdedor. Todos se unem para contar uma história. O mestre toma decisões para tornar a história interessante e divertida, enquanto os jogadores se esforçam para responder da melhor forma possível como os personagens que estão interpretando. A diversão é o aspecto mais importante.
+                    </p>
+                    <p>
+                        No entanto, pode ser desafiador lidar com as decisões e escolhas sem um direcionamento claro. Por exemplo, como determinar se um personagem conseguiu pegar um item lançado por outro jogador? Para auxiliar nesse aspecto, o livro "Feiticeiros e Maldições" apresenta um sistema de regras que auxilia tanto os jogadores quanto o mestre. Ele contém instruções para os jogadores criarem seus personagens e para o mestre estabelecer a base da história.
+                    </p>
+                    <p>
+                        Em resumo:
+                        <ul>
+                            <li>
+                                Um dos participantes assume o papel de mestre, responsável por criar e conduzir a história, controlando todas as pessoas e eventos do mundo do jogo.
+                            </li>
+                            <li>
+                                Todos os jogadores interpretam um ou mais personagens, dependendo do sistema de jogo ou da decisão do mestre sobre a dinâmica da história. Os personagens são figuras fictícias e constituem os protagonistas da história.
+                            </li>
+                            <li>
+                                Os personagens interpretados pelo mestre, frequentemente desempenhando papéis coadjuvantes ou antagonistas na história, são conhecidos como NPCs (Personagens Não Jogáveis, na sigla em inglês).
+                            </li>
+                            <li>
+                                O mestre possui a autoridade final e o poder de decisão máximo na mesa de jogo. Não há um embate entre os jogadores e o mestre; o papel do mestre é apresentar desafios e dificuldades para que os personagens dos jogadores superem e, assim, contem uma excelente história. Embora o sistema forneça regras que ajudam a padronizar muitos aspectos, o mestre tem total liberdade para segui-las ou não, dependendo do que acreditar ser melhor para o desenvolvimento da história.
+                            </li>
+                            <li>
+                                Por último, é importante que os jogadores não discutam com o mestre. Ao aceitar jogar sob a liderança do mestre, eles também concordam com as decisões que ele tomar durante o jogo.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="world">
+                    <h1>Um Mundo de Feiticeiros e Maldições</h1>
+                    <p>
+                        Boas-vindas a Feiticeiros e Maldições, uma adaptação da obra Jujutsu Kaisen
+                        para o RPG de mesa. Este é um sistema que se inspira de diversos outros, buscando
+                        os mesclar para criar uma experiência digna para aqueles que desejam criar e viver
+                        suas próprias histórias no interessante universo criado por Gege Akutami.
+                    </p>
+                    <div class="menuworld">
+                        <div class="feiticeiros"></div>
+                        <div class="maldicoes"></div>
+                        <div class="energia"></div>
+                        <div class="tecnicas"></div>
+                    </div>
+                    <div>
+                        <div class="feiticeiroscontent">
+                            <h2>Feiticeiros</h2>
+                            <p>
+                                O básico do universo de Jujutsu é a existência dos Feiticeiros Jujutsu, que são
+                                humanos capazes de manusear a misteriosa energia amaldiçoada, usada para
+                                enfrentar espíritos amaldiçoados.
+                            </p>
+                            <p>
+                                O mínimo para que uma pessoa seja caracterizada como um feiticeiro é a
+                                capacidade de visualizar os espíritos amaldiçoados. Entretanto, ser um feiticeiro
+                                também pode ser considerado uma profissão, necessitando ter bons níveis de
+                                energia amaldiçoada e ter o talento de utilizar técnicas amaldiçoadas.
+                            </p>
+                            <p>
+                                Porém, existem aqueles que nasceram sem técnic amaldiçoadas mas se tornaram
+                                capazes com o tempo por algum motivo, assim como aqueles que não podem a utilizar, mas aproveitam da existência das ferramentas amaldiçoadas para conseguirem enfrentar os espíritos.
+                            </p>
+                            <p>
+                                Ser nascido um feiticeiro significa carregar um estigma, por ser uma ocupação exaustiva e até mesmo enlouquecedora, por constantemente estarem cara a cara com maldições que induzem medo e colocam vidas em risco. Naturalmente existem diversos problemas e sequelas ao trabalhar como um profissional. Satoru Gojo é um dos que acredita que ser um pouco louco é um dos requisitos para ser um feiticeiro jujutsu, pois muitos não aguentam as visões grotescas de morte e monstros e assim desistem.
+                            </p>
+                        </div>
+                        <div class="maldicoescontent">
+                            <h2>Espíritos Amaldiçoados</h2>
+                            <p>
+                                Espíritos Amaldiçoados, também referidos simplesmente como Maldições, são
+                                uma raça de seres espirituais que se manifestam a partir da energia liberada por
+                                emoções negativas que fluem para fora dos seres humanos. São nocivos para a
+                                humanidade e por isso são os alvos principais dos feiticeiros de jujutsu.
+
+                            </p>
+                            <p>
+                                O processo de criação de uma maldição se dá a partir da energia negativa se
+                                juntando e tomando forma até se transformar de vez, semelhante ao
+                                sedimento. Locais populares como escolas e hospitais são pontos comuns para
+                                o surgimento de maldições, devido a quantidade de emoções negativas
+                                atreladas às memórias desses lugares. O mesmo conceito se aplica ao
+                                sentimento geral de ódio e medo, que pode transformar lendas famosas em
+                                criaturas reais.
+                                Emoções negativas duradouras como a relação dos humanos com pragas e
+                                desastres naturais gera uma quantia tão exuberante de energia amaldiçoada
+                                que as maldições que surgem de tais são capazes de possuir uma consciência
+                                mais avançada
+                            </p>
+                            <p>
+                                O corpo de uma maldição é feito inteiramente de energia, tornando assim
+                                impossível para que não feiticeiros possam ver ou tocar elas. É comum,
+                                inclusive, que humanos amaldiçoados nem notem tal e levem como sintomas de
+                                uma doença ou do trabalho embora aqueles que tem sua vida colocada em risco
+                                talvez ganhem a capacidade de os ver.
+                                Surgem em todos os tamanhos e formas,
+                                tendendo mais para formas bípedes e
+                                humanoides quando são de alto nível. No geral,
+                                são mais estáveis ao possuir um item e podem
+                                possuir objetos inanimados para se tornarem
+                                corpos amaldiçoados.
+                            </p>
+                            <p>
+                                Por serem compostos de energia, não são
+                                feridas por métodos convencionais, por isso
+                                devem ser exorcizados usando outra maldição -
+                                sendo assim, apenas energia amaldiçoada é
+                                capaz de exorcizar maldições - um ataque fatal
+                                usando energia amaldiçoada simplesmente faz
+                                Um sistema por Setsugiri.
+                                com que o espírito desapareça de vez. Isso não se aplica a maldições que
+                                possuam um receptáculo de carne e osso
+                            </p>
+                            <p>
+                                As maldições são categorizadas em:
+                            </p>
+                            <p>
+                                <strong>Espírito Amaldiçoado Vingativo:</strong> É um espírito criado a partir de um ser
+                                humano que se tornou uma maldição após a morte, a qual foi
+                                amaldiçoada. Feiticeiros têm uma chance maior de se tornarem
+                                maldições após a morte, o que pode ser evitado por meio do uso de
+                                jujutsu.
+                            </p>
+                            <p>
+                                <strong>Espírito Amaldiçoado Vingativo Imaginário:</strong> É um espírito que surge a
+                                partir do medo das massas. Quando muitas pessoas compartilham uma
+                                imagem de medo sobre algo, youkais ou histórias de horror podem se
+                                manifestar.
+                            </p>
+                            <p>
+                                <strong>Espírito Amaldiçoado de Doença:</strong> Surge a partir de pragas e doenças, os
+                                quais são conceitos normalmente amaldiçoados pela humanidade. <br>
+                                As maldições, assim como os feiticeiros, são categorizadas de grau quatro até
+                                especial.
+                            </p>
+                            <h3>Corpos Amaldiçoados</h3>
+                            <p>
+                                Corpos Amaldiçoados são objetos inanimados possuídos por maldições,
+                                capazes de se sustentar por si mesmos. Podem aparecer naturalmente, assim
+                                sendo hostis e perigosas para a humanidade, mas também existem corpos
+                                amaldiçoados que são criados artificialmente pelos feiticeiros, tendo um núcleo
+                                que faz o papel de coração, permitindo que eles ajam independentemente do
+                                seu criador até que o combustível que os abastece esgote.
+                                Existe um tipo peculiar de corpo
+                                amaldiçoado artificial que é capaz de
+                                produzir sua própria energia
+                                amaldiçoada e ser completamente
+                                senciente. Além disso, podem possuir
+                                mais de um núcleo, alternando entre
+                                eles, com suas próprias
+                                características. Entretanto, o processo
+                                de criação por trás deles é
+                                extremamente complexo.
+                            </p>
+                            <p>
+                                Porém, o mais normal são os corpos amaldiçoados artificiais mais simples, que
+                                ainda são extremamente úteis, principalmente com a capacidade de os
+                                manipular remotamente e modificar para uma situação necessária, tornando-se
+                                uma ferramenta altamente
+                                adaptável e um ótimo meio para
+                                feiticeiros combaterem as
+                                maldições.
+                            </p>
+                        </div>
+                        <div class="energiacontent">
+                            <h2>A Energia Amaldiçoada</h2>
+                            <p>
+                                Energia Amaldiçoada é a fonte de poder que abastece os feiticeiros e
+                                maldições, originada de emoções negativas. Todo ser humano possui energia
+                                amaldiçoada em si, embora só aqueles que alcançam um certo nível são capazes
+                                de visualizar os espíritos e a manipular, sendo sua manipulação o jujutsu.
+                                Usar jujutsu deixa resquícios de energia amaldiçoada para trás, semelhante a
+                                pegadas espectrais que podem ser usadas para rastrear o usuário - sendo até
+                                mesmo possível descobrir o usuário baseado nos resquícios - com exceção
+                                daqueles especialistas que podem disfarçar seus rastros, assim como maldições
+                                de alto nível podem. O nível de poder de um ser normalmente é definido pela
+                                sua quantidade de energia.
+                            </p>
+                            <p>
+                                Entretanto, poder detectar e usar energia amaldiçoada são duas coisas
+                                extremamente diferentes, sendo mais difícil controlar e manipular do que
+                                simplesmente visualizar: é preciso habilidade e treinamento.
+                            </p>
+                            <p>
+                                A energia amaldiçoada pura pode ser comparada a energia elétrica: volátil e
+                                difícil de utilizar na forma mais bruta. Embora sendo usada em ataques simples,
+                                é mais efetiva quando usada com técnica, como um dispositivo abastecido pela
+                                energia é mais útil que a energia pura.
+                            </p>
+                            <p>
+                                Feiticeiros Jujutsu são treinados para controlar melhor suas emoções e assim
+                                deixar vazar menos energia, pois tal é contida. Pensar em seu corpo como
+                                seções diferentes atrasa a dispersão de energia - normalmente vista como
+                                surgindo do estômago e se espalhando - deve-se compreender corpo, alma e
+                                mente como um só. O fluxo de um feiticeiro jujutsu de alto nível é mais
+                                complexo de prever devido ao como ela é espalhada de maneira balanceada
+                                pelo corpo todo com um controle preciso e rápido.
+                            </p>
+                            <p>
+                                Aplicar energia amaldiçoada em golpes é efetivo para aqueles que preferem um
+                                combate corpo-a-corpo, podendo até mesmo sobrepor o uso de técnicas. É
+                                possível utilizar energia bruta como um campo explosivo para atacar.
+                                Defensivamente, é possível cobrir seu corpo com energia para endurecer o
+                                corpo e bloquear ataques. Imbuir muita energia de uma vez em uma arma
+                                ordinária pode a prejudicar e destruir, então o processo deve ser feito de pouco
+                                em pouco. Quantidades moderadas ao decorrer do tempo podem transformar
+                                um item normal em uma ferramenta amaldiçoada.
+                            </p>
+                            <h3>Ferramentas Amaldiçoadas</h3>
+                            <p>
+                                Ferramentas Amaldiçoadas são itens propositalmente imbuídos com energia
+                                amaldiçoada, com o objetivo de auxiliar no combate contra os espíritos e
+                                maldições. Por isso, até mesmo não feiticeiros podem as usar para o combate
+                                contra maldições. Armas convencionais podem se tornar semi-amaldiçoadas
+                                caso sejam imbuídas constantemente com energia. Essas ferramentas são
+                                categorizadas de categoria um até quatro, baseado no seu poder e potência.
+                                Quanto maior o grau, maior a vantagem garantida ao usuário.
+                                Também existem as de grau especial, que normalmente são imbuídas com uma
+                                técnica amaldiçoada - são poucas as exceções - sendo assim elas possuem
+                                grande valor e podem ser usadas por aqueles com pouca energia como um
+                                substituto. Existem aquelas que são capazes até mesmo de anular técnicas e de
+                                acumular mais energia em si.
+                            </p>
+                            <h3>Objetos Amaldiçoados</h3>
+                            <p>
+                                Um objeto amaldiçoado é uma maldição que existe como um objeto ao invés
+                                de um espírito completamente formado. Diferente de ferramentas
+                                amaldiçoadas, não são itens imbuídos com energia, mas sim maldições presas
+                                ao formato de artefato. Essas relíquias normalmente são restos de eras
+                                passadas ou os resquícios de um feiticeiro ou maldição poderosa.
+                                Objetos Amaldiçoados deixam resquícios de energia normalmente e caso sejam
+                                poderosos o suficiente continuam atraindo maldições. Existem aqueles objetos
+                                que são tão poderosos que não podem ser destruídos e alguns podem ser
+                                usados para incarnar espíritos amaldiçoados de grande poder.
+                            </p>
+                        </div>
+                        <div class="tecnicascontent">
+                            <h2>Técnicas Amaldiçoadas</h2>
+                            <p>
+                                Técnicas Amaldiçoadas são uma forma avançada de Jujutsu que garantem ao
+                                usuário habilidades especializadas. Por mais que a energia
+                                amaldiçoada possa ser usada para revestir ataques ou para força bruta, isso não
+                                é suficiente para ser considerado uma técnica. As técnicas fazem a energia fluir
+                                de maneira com a qual ela carregue uma função específica.
+                            </p>
+                            <h2>Técnicas Inatas</h2>
+                            <p>
+                                Técnicas inatas são poderes que foram atrelados a um feiticeiro quando ele
+                                nasceu. Normalmente se manifestam na idade de cinco ou seis anos e são
+                                completamente únicas para seu respectivo usuário, por esse mesmo motivo em
+                                maioria dos casos elas não podem ser copiadas, por requerer talento inato para
+                                utilizar. Dentro do mundo de Jujutsu é considerado que uma técnica inata
+                                compreende 80% do conjunto de habilidades de um feiticeiro que a possua.
+                            </p>
+                            <h3>Técnicas Herdadas</h3>
+                            <p>
+                                Técnicas herdadas são técnicas que são passadas pela linhagem de sangue das
+                                famílias tradicionais de feiticeiros, como Zennin, Kamo e Inumaki. Essas técnicas são poderosas e
+                                contam com a vantagem de serem cultivadas e passadas de geração em
+                                geração, assim sendo mais fácil para que quem a receba entenda como usar.
+                                Entretanto, tal possui uma desvantagem: outros grupos de pessoas podem
+                                passar a compreender como a técnica funciona e suas fraquezas.
+                            </p>
+                            <h3>Técnicas de Barreira</h3>
+                            <p>
+                                Técnicas de barreira permitem o usuário erguer e manipular paredes, usadas
+                                para esconder áreas, proteger o usuário, prender oponentes e por aí vai.
+                                Técnicas de Barreira são as mais simples e comuns entre feiticeiros por não
+                                necessitarem de nenhum talento inato para utilizar: qualquer um com
+                                treinamento e energia suficiente pode aprender a erguer barreiras. Porém,
+                                habilidades mais avançadas de barreira podem ser complexas até mesmo para
+                                aqueles com o maior treino. Por exemplo, criar uma barreira é fácil, mas criar
+                                uma barreira pela qual apenas uma pessoa em específico possa sair requer
+                                habilidades avançadas.
+                            </p>
+                            <h3>Expansão de Domínio</h3>
+                            <p>
+                                Dentre as técnicas de barreira há uma mais avançada e que poucos podem
+                                conjurar: a expansão de domínio. Ela manifesta o Domínio Interno do usuário e
+                                prende o alvo dentro dela, usando barreiras para criar um espaço separado.
+                                Uma vez que esteja dentro, as técnicas do feiticeiro que conjurou são
+                                melhoradas e não podem ser evitadas. Consome um nível absurdo de energia e
+                                poucos feiticeiros e maldições conseguem a conjurar. <br>
+                            </p>
+                            <p>
+                                Um domínio interno é
+                                uma área criada dentro da mente de um indivíduo e que pode ser manifestada
+                                usando energia amaldiçoada. Existem
+                                poucas maneiras de ir contra um domínio e de evitar os ataques que não podem
+                                errar: defendendo os ataques com sua magia ou utilizando seu próprio
+                                domínio. Quando dois domínios são ativados ao mesmo tempo, o que possuir
+                                uma técnica mais refinada irá prevalecer.
+                            </p>
+                            <h3>Shikigamis</h3>
+                            <p>
+                                Shikigamis são maldições familiares que são conjuradas e controladas por
+                                feiticeiros de jujutsu, com seus usuários sendo conhecidos como Usuários de
+                                Shikigami. Tal é considerada um tipo de técnica amaldiçoada, sendo comum que
+                                aqueles com menor maestria sejam capazes de invocar shikigamis simples,
+                                sendo encarnados da energia amaldiçoada do seu invocador, comumente
+                                precisando de um intermediário, como um talismã.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="system">
+                    <h1>Sistema D20</h1>
+                    <p>
+                        O RPG funciona como um jogo de interpretação, no qual as ações são descritas pelos jogadores e pelo mestre, sem a necessidade de regras ou rolagens de dados. No entanto, as mecânicas de jogo entram em cena quando um personagem tenta uma ação que apresenta uma chance de falha. Nesses casos, o mestre pode solicitar um teste.
+                    </p>
+                    <p>
+                        Os testes constituem a mecânica básica dos RPGs e são realizados utilizando o sistema D20, que envolve a rolagem de um dado de vinte lados. Um bônus é adicionado ao resultado do dado, sendo este determinado durante a criação do personagem. Diversos tipos de bônus existem, e um bônus específico é somado conforme solicitado pelo mestre. Por exemplo, se o bônus for 5, o teste seria representado como 1d20+5 (um dado de vinte lados somado a cinco). O resultado desse cálculo indica o quão bem a ação foi executada.
+                    </p>
+                    <p>
+                        Quando o mestre solicita um teste, ele também estabelece uma dificuldade para a tarefa em questão, que será usada como ponto de referência para comparação com o valor obtido no teste. Se o resultado for igual ou maior do que a dificuldade, o personagem é considerado bem-sucedido na realização da ação.
+                    </p>
+                    <h2>Atributos</h2>
+                    <p>
+                        Os bônus para os testes geralmente são derivados dos atributos e perícias do personagem. Abaixo, apresento uma lista dos atributos e uma breve explicação para cada um deles usando tomates:
+                        <ul>
+                            <li><span class="for">Força</span>: Indica a habilidade de esmagar tomates.</li>
+                            <li><span class="des">Destreza</span>: Indica a capacidade de desviar-se de tomates.</li>
+                            <li><span class="con">Constituição</span>: Indica a resistência a ser atingido por tomates.</li>
+                            <li><span class="int">Inteligência</span>: Indica saber que tomate é uma fruta.</li>
+                            <li><span class="sab">Sabedoria</span>: Indica que, apesar de saber que o tomate é uma fruta, o personagem evita colocá-lo em uma salada de frutas.</li>
+                            <li><span class="car">Carisma</span>: Refere-se à habilidade de persuadir alguém a incluir tomate em uma salada de frutas.</li>
+                        </ul>
+                        <p>
+                            Os valores atribuídos a esses atributos são determinados durante a criação do personagem e cada valor confere um bônus chamado de Modificador. Por exemplo, um valor de Força 14 confere um bônus de 2 nos testes relacionados à Força. Os modificadores de atributo são mais detalhadamente explicados no capítulo sobre Personagens.
+                        </p>
+                    </p>
+                    <h2>Maestria</h2>
+                    <p>
+                        Além disso, existe um outro tipo de bônus chamado Maestria. O bônus de maestria começa em 2 e aumenta à medida que o personagem evolui. Esse bônus é adicionado às perícias nas quais o personagem possui maestria, indicando sua habilidade excepcional em determinadas ações. Quando um personagem é particularmente proficiente em um assunto, ele pode obter maestria duas vezes na perícia, o que é conhecido como especialização. Nesse caso, metade do bônus de maestria é somado à soma normal, arredondando-se para baixo. Por exemplo, um personagem com um bônus de maestria 3 somaria 3 nas perícias que possui maestria e 4 nas perícias que possui especialização. A maestria é detalhadamente explicada no capítulo sobre Personagens.
+                    </p>
+                    <h2>Perícias</h2>
+                    <p>
+                        Por fim, temos as perícias, que representam as diversas habilidades que um personagem possui. Os valores das perícias também são determinados durante a criação do personagem e dependem dos atributos. As perícias abrangem uma ampla gama de áreas e são mais aprofundadas no capítulo sobre Personagens.
+                    </p>
+                    <p>
+                        Segue abaixo uma lista das perícias com uma breve explicação de cada uma:
+                    </p>
+                    <div class="pericias">
+                        <div class="pericia acrobacia"><img src="../images/pericias/acrobacia.png" alt="pericia"><span> Acrobacia</span></div>	
+                        <div class="pericia astucia"><img src="../images/pericias/astucia.png" alt="pericia"><span> Astúcia</span></div>
+                        <div class="pericia atletismo"><img src="../images/pericias/atletismo.png" alt="pericia"><span> Atletismo</span></div>
+                        <div class="pericia enganacao"><img src="../images/pericias/enganacao.png" alt="pericia"><span> Enganação</span></div>
+                        <div class="pericia feiticaria"><img src="../images/pericias/feiticaria.png" alt="pericia"><span> Feitiçaria</span></div>
+                        <div class="pericia fortitude"><img src="../images/pericias/fortitude.png" alt="pericia"><span> Fortitude</span></div>
+                        <div class="pericia furtividade"><img src="../images/pericias/furtividade.png" alt="pericia"><span> Furtividade</span></div>
+                        <div class="pericia historia"><img src="../images/pericias/historia.png" alt="pericia"><span> História</span></div>
+                        <div class="pericia integridade"><img src="../images/pericias/integridade.png" alt="pericia"><span> Integridade</span></div>
+                        <div class="pericia intimidacao"><img src="../images/pericias/intimidacao.png" alt="pericia"><span> Intimidação</span></div>
+                        <div class="pericia intuicao"><img src="../images/pericias/intuicao.png" alt="pericia"><span> Intuição</span></div>
+                        <div class="pericia investigacao"><img src="../images/pericias/investigacao.png" alt="pericia"><span> Investigação</span></div>
+                        <div class="pericia luta"><img src="../images/pericias/luta.png" alt="pericia"><span> Luta</span></div>
+                        <div class="pericia medicina"><img src="../images/pericias/medicina.png" alt="pericia"><span> Medicina</span></div>
+                        <div class="pericia ocultismo"><img src="../images/pericias/ocultismo.png" alt="pericia"><span> Ocultismo</span></div>
+                        <div class="pericia oficio"><img src="../images/pericias/oficio.png" alt="pericia"><span> Ofício</span></div>
+                        <div class="pericia percepcao"><img src="../images/pericias/percepcao.png" alt="pericia"><span> Percepção</span></div>	
+                        <div class="pericia performance"><img src="../images/pericias/performace.png" alt="pericia"><span> Performance</span></div>
+                        <div class="pericia persuasao"><img src="../images/pericias/persuasao.png" alt="pericia"><span> Persuasão</span></div>
+                        <div class="pericia pontaria"><img src="../images/pericias/pontaria.png" alt="pericia"><span> Pontaria</span></div>
+                        <div class="pericia prestidigitacao"><img src="../images/pericias/prestidigitacao.png" alt="pericia"><span>Prestidigitação</span></div>
+                        <div class="pericia reflexos"><img src="../images/pericias/reflexos.png" alt="pericia"><span> Reflexos</span></div>
+                        <div class="pericia religiao"><img src="../images/pericias/religiao.png" alt="pericia"><span> Religião</span></div>
+                        <div class="pericia vontade"><img src="../images/pericias/vontade.png" alt="pericia"><span> Vontade</span></div>
+                        <div class="periciaconteudo">
+                            <div class="acrobaciac c">
+                                <img src="../images/pericias/acrobacia.png" alt="pericia">
+                                <h4>Acrobacia</h4>
+                                <div class="des atri">Destreza</div>
+                                <p>
+                                    A perícia de Acrobacia também mede capacidades físicas, mas focando em um
+                                    quesito de agilidade e equilíbrio. É usada em situações que requerem se
+                                    equilibrar bem, além de manobras acrobáticas. Também é usada para tentar
+                                    escapar de alguém tentando agarrar.
+                                </p>
+                            </div>
+                            <div class="astuciac c">
+                                <img src="../images/pericias/astucia.png" alt="pericia">
+                                <h4>Astúcia</h4>
+                                <div class="int atri">Inteligência</div>
+                                <section>Resistência</section>
+                                <p>
+                                    A perícia de Astúcia é a capacidade de compreender e associar rapidamente
+                                    informações, sendo usada em testes de resistência contra efeitos mentais que
+                                    necessitam de pensamentos rápidos e de destrinchar informações.
+                                </p>
+                            </div>
+                            <div class="atletismoc c">
+                                <img src="../images/pericias/atletismo.png" alt="pericia">
+                                <h4>Atletismo</h4>
+                                <div class="for atri">Força</div>
+                                <p>
+                                    A perícia de Atletismo serve para representar as capacidades físicas diante
+                                    situações complicadas que requisitam muito do corpo em uma questão de força
+                                    e resistência, como escalar, pular ou nadar. Também é usado dentro de
+                                    combate para situações como agarramento, seja para agarrar ou resistir a
+                                    alguém que tente o agarrar.
+                                </p>
+                            </div>
+                            <div class="enganacaoc c">
+                                <img src="../images/pericias/enganacao.png" alt="pericia"> 
+                                <h4>Enganação</h4>
+                                <div class="car atri">Carisma</div>
+                                <p>
+                                    A perícia de Enganação representa a capacidade de esconder mentiras de
+                                    maneira convincente, alterando fatos e mantendo as mudanças acreditáveis,
+                                    omitindo fatores específicos e manipulando a verdade.
+                                </p>
+                            </div>
+                            <div class="feiticariac c">
+                                <img src="../images/pericias/feiticaria.png" alt="pericia"> 
+                                <h4>Feitiçaria</h4>
+                                <div class="int atri">Inteligência</div>
+                                <p>
+                                    A perícia de Feitiçaria engloba o conhecimento sobre as técnicas de Jujutsu em
+                                    si, medindo o quanto se sabe sobre técnicas, energia amaldiçoada ou nomes
+                                    respeitados, mas difíceis de se conhecer. <strong>Só pode ser usada com Maestria.</strong>
+                                </p>
+                            </div>
+                            <div class="fortitudec c">
+                                <img src="../images/pericias/fortitude.png" alt="pericia"> 
+                                <h4>Fortitude</h4>
+                                <div class="con atri">Constituição</div>
+                                <section>Resistência</section>
+                                <p>
+                                    A perícia de Fortitude é a junção da resistência física com a vitalidade, sendo
+                                    usada para resistir a efeitos que exijam um físico saudável e vigoroso, como
+                                    doenças ou venenos. Também é usada para se manter o fôlego, manter a
+                                    concentração ou forçar o corpo além do limite.
+                                </p>
+                            </div>
+                            <div class="furtividadec c"><img src="../images/pericias/furtividade.png" alt="pericia"> 
+                                <h4>Furtividade</h4>
+                                <div class="des atri">Destreza</div>
+                                <p>
+                                    A perícia de Furtividade é usada para tentar se esgueirar, passar despercebido e
+                                    se esconder de inimigos, sem ser visto ou ouvido. Entretanto, é importante
+                                    ressaltar que mesmo com um valor alto, é necessário um espaço onde é capaz
+                                    se esconder para usar furtividade.
+                                </p>
+                            </div>
+                            <div class="historiac c">
+                                <img src="../images/pericias/historia.png" alt="pericia"> 
+                                <h4>História</h4>
+                                <div class="int atri">Inteligência</div>
+                                <p>
+                                    A perícia de História é usada para se
+                                    recordar da história e do passado do
+                                    mundo, lembrando-se de eventos
+                                    históricos, figuras históricas, guerras e
+                                    tudo aquilo que pode ter se perdido no
+                                    tempo.
+                                </p>
+                            </div>
+                            <div class="integridadec c"><img src="../images/pericias/integridade.png" alt="pericia"> 
+                                <h4>Integridade</h4>
+                                <div class="con atri">Constituição</div>
+                                <section>Resistência</section>
+                                <p>
+                                    A perícia de Integridade representa, diretamente, o quão íntegro e consciente
+                                    um ser é do formato da sua própria alma, conseguindo o preservar e proteger. É
+                                    usada sempre que se recebe dano na alma, reduzindo o dano pela metade em
+                                    caso de um sucesso.
+                                </p>
+                            </div>
+                            <div class="intimidacaoc c"><img src="../images/pericias/intimidacao.png" alt="pericia"> 
+                                <h4>Intimidação</h4>
+                                <div class="car atri">Carisma</div>
+                                <p>
+                                    A perícia de Intimidação representa a capacidade de impor a sua presença
+                                    contra alguém, ameaçando, sendo hostil e violento, assim conseguindo alcançar
+                                    o que deseja a partir do medo.
+                                </p>
+                            </div>
+                            <div class="intuicaoc c"><img src="../images/pericias/intuicao.png" alt="pericia"> 
+                                <h4>Intuição</h4>
+                                <div class="sab atri">Sabedoria</div>
+                                <p>
+                                    A perícia de Intuição representa a capacidade de uma pessoa de pressentir e
+                                    compreender os seus arredores de maneira intuitiva. É usada para se perceber
+                                    se alguém está mentindo, prever o próximo movimento de alguém ou
+                                    determinar as intenções.
+                                </p>
+                            </div>
+                            <div class="investigacaoc c">
+                                <img src="../images/pericias/investigacao.png" alt="pericia"> 
+                                <h4>Investigação</h4>
+                                <div class="int atri">Inteligência</div>
+                                <p>
+                                    A perícia de Investigação é usada para se procurar por pistas e deduzir o
+                                    significado delas, conseguindo assim encontrar um objeto oculto, o ponto fraco
+                                    de uma estrutura ou encontrar
+                                    conhecimento em alguma fonte antiga.
+                                </p>
+                            </div>
+                            <div class="lutac c">
+                                <img src="../images/pericias/luta.png" alt="pericia"> 
+                                <h4>Luta</h4>
+                                <div class="atri"><span class="for">Força</span> ou <span class="des">Destreza</span></div>
+                                <p>
+                                    A perícia de Luta reúne as capacidades de combate físico de um personagem,
+                                    tanto armado com armas brancas quanto usando seu próprio corpo e artes
+                                    marciais. É usada em rolagens de ataque desarmado ou com armas corpo-acorpo. <strong>Não é possível obter especialização em Luta.</strong>
+                                </p>
+                            </div>
+                            <div class="medicinac c"><img src="../images/pericias/medicina.png" alt="pericia"> 
+                                <h4>Medicina</h4>
+                                <div class="sab atri">Sabedoria</div>
+                                <p>
+                                    A perícia de Medicina mede o conhecimento médico e a capacidade se tratar
+                                    alguém dentro das capacidades humanas e físicas. Pode ser usada para
+                                    estabilizar alguém e para diagnosticar doenças ou condições. <strong>
+                                        Só pode ser usada
+                                        com Maestria, exceto para tentar estabilizar um personagem morrendo.
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="ocultismoc c"><img src="../images/pericias/ocultismo.png" alt="pericia"> 
+                                <h4>Ocultismo</h4>
+                                <div class="sab atri">Sabedoria</div>
+                                <p>
+                                    A perícia de Ocultismo engloba um tipo peculiar de conhecimento importante
+                                    no mundo de Jujutsu, que é o conhecimento sobre o oculto: lendas obscuras,
+                                    criaturas malditas, cultos e muito mais.
+                                </p>
+                            </div>
+                            <div class="oficioc c">
+                                <img src="../images/pericias/oficio.png" alt="pericia"> 
+                                <h4>Ofício</h4>
+                                <div class="int atri">Inteligência</div>
+                                <p>
+                                    A perícia de Ofício é uma perícia com
+                                    diferentes variações, com cada uma
+                                    representando a capacidade de extrair o
+                                    potencial de um kit de ferramentas
+                                    diferente. Existe uma variação para cada
+                                    kit de ferramentas específico, e isso
+                                    interfere no seu uso, possibilitando extrair
+                                    ao máximo de um certo kit. 
+                                    <strong>
+                                        Só pode ser
+                                        usada com Maestria; ao receber Maestria em um kit de ferramentas, você
+                                        recebe a sua respectiva perícia de Ofício.
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="percepcaoc c">
+                                <img src="../images/pericias/percepcao.png" alt="pericia"> 
+                                <h4>Percepção</h4>
+                                <div class="sab atri">Sabedoria</div>
+                                <p>
+                                    A perícia de Percepção é usada para se tentar perceber, ouvir ou detectar a
+                                    presença de algo ou alguém, medindo de forma geral a atenção aos arredores e
+                                    o quão afiados são os sentidos.
+                                </p>
+                            </div>	
+                            <div class="performancec c">
+                                <img src="../images/pericias/performace.png" alt="pericia"> 
+                                <h4>Performance</h4>
+                                <div class="car atri">Carisma</div>
+                                <p>
+                                    A perícia de Performance determina a capacidade de se cativar as pessoas
+                                    através de algum meio de arte ou entretenimento, como a dança, a atuação,
+                                    música e tudo mais que se engloba.
+                                </p>
+                            </div>
+                            <div class="persuasaoc c">
+                                <img src="../images/pericias/persuasao.png" alt="pericia"> 
+                                <h4>Persuasão</h4>
+                                <div class="car atri">Carisma</div>
+                                <p>
+                                    A perícia de Persuasão representa a capacidade de se influenciar indivíduos ou
+                                    grupos com a lábia, agradando e cativando a pessoa com seu carisma.
+                                </p>
+                            </div>
+                            <div class="pontariac c">
+                                <img src="../images/pericias/pontaria.png" alt="pericia"> 
+                                <h4>Pontaria</h4>
+                                <div class="atri"><span class="for">Força</span> ou <span class="des">Destreza</span></div>
+                                <p>
+                                    A perícia de Pontaria é o conjunto da precisão, mira e noção de alguém que
+                                    esteja manuseando uma arma a distância. Serve tanto para arcos e bestas
+                                    quanto para armas de fogo, sendo uma geral, cobrindo também armas de
+                                    arremesso. É usada para realizar ataques com armas a distância e armas de
+                                    arremesso. <strong>Não é possível obter especialização em Pontaria.</strong>
+                                </p>
+                            </div>
+                            <div class="prestidigitacaoc c">
+                                <img src="../images/pericias/prestidigitacao.png" alt="pericia">
+                                <h4>Prestidigitação</h4>
+                                <div class="des atri">Destreza</div>
+                                <p>
+                                    A perícia de Prestidigitação é a agilidade especificamente com as mãos,
+                                    representando a capacidade de, por exemplo, se arrombar fechaduras, roubar
+                                    um objeto em posse de uma pessoa ou implantar nela.<strong> Só pode ser usada com Maestria.</strong>
+
+                                </p>
+                            </div>
+                            <div class="reflexosc c">
+                                <img src="../images/pericias/reflexos.png" alt="pericia"> 
+                                <h4>Reflexos</h4>
+                                <div class="des atri">Destreza</div>
+                                <section>Resistência</section>
+                                <p>
+                                    A perícia de Reflexos é a junção de reflexos rápidos corporais com agilidade. É
+                                    usada em testes de resistência contra armadilhas ou explosões, por exemplo,
+                                    além de afetar outras habilidades.
+                                </p>
+                            </div>
+                            <div class="religiaoc c">
+                                <img src="../images/pericias/religiao.png" alt="pericia"> 
+                                <h4>Religião</h4>
+                                <div class="int atri">Inteligência</div>
+                                <p>
+                                    A perícia de Religião é usada para se recordar sobre figuras de religiões,
+                                    crenças, filosofias, ritos e as práticas de cada uma.
+                                </p>
+                            </div>
+                            <div class="vontadec c">
+                                <img src="../images/pericias/vontade.png" alt="pericia"> 
+                                <h4>Vontade</h4>
+                                <div class="car atri">Carisma</div>
+                                <section>Resistência</section>
+                                <p>
+                                    A perícia de Vontade soma a determinação e força mental de um personagem
+                                    para ser usada em testes de resistência contra efeitos como a intimidação,
+                                    charme e controle mental. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../images/moon.png" alt="modo-escuro" id="tema">
+    </main>
+
+    <script src="../js/introduction.js"></script>
+    <script src="../js/modoclaro.js"></script>
+</body>
+</html>
